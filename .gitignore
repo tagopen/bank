@@ -1,0 +1,10 @@
+# Files archive
+*.rar
+*.zip
+
+# sass cache
+.sass-cache
+
+# Folders to ignore
+bower_components
+node_modules
