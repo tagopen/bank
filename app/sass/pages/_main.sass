@@ -52,16 +52,32 @@
     margin-bottom: 20px
   &__btn  
     display: inline-block
+    position: relative
     color: #fff
     font: 700 13px/14px sans-serif
     text-transform: uppercase
     border: 3px solid #fff
     padding: 15px 16px
+    z-index: 10
+    overflow: hidden
+    &:before
+      content: ''
+      display: block
+      position: absolute
+      z-index: -1
+      left: 0
+      top: -105%
+      height: 100%
+      width: 100%
+      background-color: #ac183c
+      transition: all 0.2s ease
     &:hover,
     &:focus,
     &:visited
       text-decoration: none
       color: #fff
+      &:before
+        top: 0
 +rx(767)
   .collapse
     &--display
@@ -84,7 +100,9 @@
       font: 400 14px/20px sans-serif
       margin-bottom: 50px
     &__btn
-      padding: 18px 40px  
+      padding: 18px 40px 
+      letter-spacing: 1px 
+      margin-bottom: 40px
 +r(960)
   +comment('slider styles') 
   .slider
