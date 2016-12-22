@@ -407,6 +407,7 @@
 /* S E C T I O N    N A V B A R    S T Y L E S  */
 /* -------------------------------------------- */
 .navbar {
+  margin: 0;
   border: 0 none;
   -webkit-box-shadow: 20px 0 50px rgba(0, 0, 0, 0.08);
           box-shadow: 20px 0 50px rgba(0, 0, 0, 0.08);
