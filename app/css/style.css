@@ -209,6 +209,7 @@
   margin-bottom: 20px;
 }
 .slider__btn {
+  display: inline-block;
   color: #fff;
   font: 700 13px/14px sans-serif;
   text-transform: uppercase;
@@ -248,6 +249,9 @@
   .slider__subheading {
     font: 400 14px/20px sans-serif;
     margin-bottom: 50px;
+  }
+  .slider__btn {
+    padding: 18px 40px;
   }
 }
 @media only screen and (min-width: 960px) {
