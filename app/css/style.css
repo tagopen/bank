@@ -529,7 +529,6 @@
   display: inline-block !important;
   width: auto;
   bottom: 20px;
-  left: 0;
 }
 .slider__markers .slick-dots li {
   height: auto;
@@ -546,11 +545,6 @@
 }
 .slider__markers .slick-active button {
   background-color: #ac183c !important;
-}
-
-.valera {
-  height: 100px;
-  background-color: red;
 }
 
 @media only screen and (max-width: 767px) {
