@@ -118,32 +118,8 @@
   text-align: left;
 }
 
-/* ---------------------------------------- */
-/* H O M E    P A G E    S T Y L E          */
-/* ---------------------------------------- */
-/* -------------------------------------------- */
-/* S E C T I O N    N A V B A R    S T Y L E S  */
-/* -------------------------------------------- */
-.navbar {
-  -webkit-box-shadow: 0 0 10px 10px #fff;
-          box-shadow: 0 0 10px 10px #fff;
-}
-.navbar__item {
-  padding: 42px 35px;
-}
-.navbar__link {
-  font: 700 16px/18px "Leto Sans", sans-serif;
-  color: #282828;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-.navbar__link:hover, .navbar__link:focus {
-  color: #b01641;
-  text-decoration: none;
-}
-.navbar__toggle {
-  margin-top: 23px;
-  padding: 20px 34px;
+.btn-bank {
+  padding: 0 30px;
   background-color: #b4243b;
   -webkit-border-radius: 23px;
   border-radius: 23px;
@@ -153,9 +129,77 @@
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
-.navbar__toggle:hover, .navbar__toggle:focus {
+.btn-bank:hover, .btn-bank:focus {
   color: #fff;
   text-decoration: none;
+}
+
+/* ---------------------------------------- */
+/* H O M E    P A G E    S T Y L E          */
+/* ---------------------------------------- */
+/* -------------------------------------------- */
+/* S E C T I O N    N A V B A R    S T Y L E S  */
+/* -------------------------------------------- */
+.navbar {
+  border: 0 none;
+  -webkit-box-shadow: 20px 0 50px rgba(0, 0, 0, 0.08);
+          box-shadow: 20px 0 50px rgba(0, 0, 0, 0.08);
+}
+.navbar__container {
+  padding-left: 0;
+  padding-right: 0;
+}
+.navbar__item {
+  padding: 35px 0;
+}
+.navbar__link {
+  font: 700 16px/18px "Leto Sans", sans-serif;
+  color: #282828;
+  text-transform: uppercase;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.navbar__link:hover, .navbar__link:focus {
+  color: #b01641;
+  text-decoration: none;
+}
+
+.dropdown-toggle {
+  margin-top: 17px;
+}
+
+@media only screen and (min-width: 1200px) {
+  .navbar {
+    padding-right: 20px;
+  }
+}
+.logo {
+  position: relative;
+  display: block;
+  width: 236px;
+  height: 89px;
+  background: transparent url(../img/logo/logo.jpg) no-repeat scroll 0 0;
+  background-size: contain;
+  text-align: center;
+}
+.logo__descr {
+  position: absolute;
+  display: inline-block;
+  margin-top: 55px;
+  top: 0;
+  left: 0;
+  right: 0;
+  font: 500 6px/8px "Geometria", sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.caret {
+  border-top: 7px dashed;
+  border-top: 7px solid \9;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
 }
 
 @media only screen and (max-width: 767px) {

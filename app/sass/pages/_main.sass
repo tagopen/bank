@@ -3,35 +3,66 @@
 .text-danger
   color: #e74c3c
   text-align: left
+.btn-bank
+  padding: 0 30px
+  background-color: #b4243b
+  +br(23px)
+  font: 700 16px/18px sans-serif
+  color: #fff
+  text-transform: uppercase
+  transition: all .3s ease-out
+  &:hover,
+  &:focus
+    color: #fff
+    text-decoration: none
 +comment("home page style")
 +comment('section navbar styles')
 .navbar
-  box-shadow: 0 0 10px 10px #fff
+  border: 0 none
+  box-shadow: 20px 0 50px rgba(0, 0, 0, 0.08)
+  &__container
+    padding-left: 0
+    padding-right: 0
   &__item
-    padding: 42px 35px
-
+    padding: 35px 0
   &__link
     font: 700 16px/18px $font-leto
     color: $nav-link-color
     text-transform: uppercase
     text-decoration: none
+    transition: all .3s ease-out
     &:hover,
     &:focus
       color: $nav-link-color-hover
       text-decoration: none
-  &__toggle
-    margin-top: 23px
-    padding: 20px 34px
-    background-color: #b4243b
-    +br(23px)
-    font: 700 16px/18px sans-serif
+.dropdown-toggle
+  margin-top: 17px
++r(1200)
+  .navbar
+    padding-right: 20px
+.logo
+  position: relative
+  display: block
+  width: 236px
+  height: 89px
+  background: transparent url(../img/logo/logo.jpg) no-repeat scroll 0 0
+  background-size: contain
+  text-align: center
+  &__descr
+    position: absolute
+    display: inline-block
+    margin-top: 55px
+    top: 0
+    left: 0
+    right: 0
+    font: 500 6px/8px $font-geometria
     color: #fff
     text-transform: uppercase
-    transition: all .3s ease-out
-    &:hover,
-    &:focus
-      color: #fff
-      text-decoration: none
+.caret
+  border-top: 7px dashed
+  border-top: 7px solid \9
+  border-right: 5px solid transparent
+  border-left: 5px solid transparent
 +rx(767)
   .collapse
     &--display
@@ -39,3 +70,6 @@
       height: auto !important
       padding-bottom: 0px
       overflow: visible !important
+
+
+
