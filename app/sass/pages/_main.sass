@@ -4,3 +4,38 @@
   color: #e74c3c
   text-align: left
 +comment("home page style")
++comment('section navbar styles')
+.navbar
+  box-shadow: 0 0 10px 10px #fff
+  &__item
+    padding: 42px 35px
+
+  &__link
+    font: 700 16px/18px $font-leto
+    color: $nav-link-color
+    text-transform: uppercase
+    text-decoration: none
+    &:hover,
+    &:focus
+      color: $nav-link-color-hover
+      text-decoration: none
+  &__toggle
+    margin-top: 23px
+    padding: 20px 34px
+    background-color: #b4243b
+    +br(23px)
+    font: 700 16px/18px sans-serif
+    color: #fff
+    text-transform: uppercase
+    transition: all .3s ease-out
+    &:hover,
+    &:focus
+      color: #fff
+      text-decoration: none
++rx(767)
+  .collapse
+    &--display
+      display: block !important
+      height: auto !important
+      padding-bottom: 0px
+      overflow: visible !important

@@ -1,3 +1,5 @@
+/* fonts */
+/* navbar */
 /* ------------------------------------------------------------------ */
 /* O L D - B R O W S E R    J R E J E C T    N O T I F I C A T I O N  */
 /* ------------------------------------------------------------------ */
@@ -119,3 +121,48 @@
 /* ---------------------------------------- */
 /* H O M E    P A G E    S T Y L E          */
 /* ---------------------------------------- */
+/* -------------------------------------------- */
+/* S E C T I O N    N A V B A R    S T Y L E S  */
+/* -------------------------------------------- */
+.navbar {
+  -webkit-box-shadow: 0 0 10px 10px #fff;
+          box-shadow: 0 0 10px 10px #fff;
+}
+.navbar__item {
+  padding: 42px 35px;
+}
+.navbar__link {
+  font: 700 16px/18px "Leto Sans", sans-serif;
+  color: #282828;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.navbar__link:hover, .navbar__link:focus {
+  color: #b01641;
+  text-decoration: none;
+}
+.navbar__toggle {
+  margin-top: 23px;
+  padding: 20px 34px;
+  background-color: #b4243b;
+  -webkit-border-radius: 23px;
+  border-radius: 23px;
+  font: 700 16px/18px sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.navbar__toggle:hover, .navbar__toggle:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 767px) {
+  .collapse--display {
+    display: block !important;
+    height: auto !important;
+    padding-bottom: 0px;
+    overflow: visible !important;
+  }
+}
