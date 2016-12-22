@@ -102,6 +102,34 @@
 /* ---------------------------------------- */
 /* G E N E R A L    S T Y L E               */
 /* ---------------------------------------- */
+@font-face {
+  font-family: "ProximaNova-Bold";
+  src: url("../font/ProximaNova-Bold/ProximaNova-Bold.eot");
+  src: url("../font/ProximaNova-Bold/ProximaNova-Bold.eot?#iefix") format("embedded-opentype"), url("../font/ProximaNova-Bold/ProximaNova-Bold.woff2") format("woff2"), url("../font/ProximaNova-Bold/ProximaNova-Bold.woff") format("woff"), url("../font/ProximaNova-Bold/ProximaNova-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ProximaNova-ExtraBold";
+  src: url("../font/ProximaNova-ExtraBold/ProximaNova-ExtraBold.eot");
+  src: url("../font/ProximaNova-ExtraBold/ProximaNova-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../font/ProximaNova-ExtraBold/ProximaNova-ExtraBold.woff2") format("woff2"), url("../font/ProximaNova-ExtraBold/ProximaNova-ExtraBold.woff") format("woff"), url("../font/ProximaNova-ExtraBold/ProximaNova-ExtraBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ProximaNova-Light";
+  src: url("../font/ProximaNova-Light/ProximaNova-Light.eot");
+  src: url("../font/ProximaNova-Light/ProximaNova-Light.eot?#iefix") format("embedded-opentype"), url("../font/ProximaNova-Light/ProximaNova-Light.woff2") format("woff2"), url("../font/ProximaNova-Light/ProximaNova-Light.woff") format("woff"), url("../font/ProximaNova-Light/ProximaNova-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ProximaNova-Regular";
+  src: url("../font/ProximaNova-Regular/ProximaNova-Regular.eot");
+  src: url("../font/ProximaNova-Regular/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"), url("../font/ProximaNova-Regular/ProximaNova-Regular.woff2") format("woff2"), url("../font/ProximaNova-Regular/ProximaNova-Regular.woff") format("woff"), url("../font/ProximaNova-Regular/ProximaNova-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 .ic {
   display: inline-block;
   vertical-align: middle;
@@ -158,11 +186,91 @@
   text-decoration: none;
 }
 
+/* ---------------------------------------- */
+/* S L I D E R    S T Y L E S               */
+/* ---------------------------------------- */
+.slider__item {
+  padding: 40px 0 20px;
+}
+.slider__item--1 {
+  background: url(../img/sliderbg1-320.jpg) no-repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 0;
+}
+.slider__heading {
+  color: #fff;
+  font: 400 29px/36px "ProximaNova-Bold", sans-serif;
+  margin: 0 0 25px;
+}
+.slider__subheading {
+  color: #fff;
+  font: 400 12px/14px sans-serif;
+  margin-bottom: 20px;
+}
+.slider__btn {
+  color: #fff;
+  font: 700 13px/14px sans-serif;
+  text-transform: uppercase;
+  border: 3px solid #fff;
+  padding: 15px 16px;
+}
+.slider__btn:hover, .slider__btn:focus, .slider__btn:visited {
+  text-decoration: none;
+  color: #fff;
+}
+
 @media only screen and (max-width: 767px) {
   .collapse--display {
     display: block !important;
     height: auto !important;
     padding-bottom: 0px;
     overflow: visible !important;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* ---------------------------------------- */
+  /* S L I D E R    S T Y L E S               */
+  /* ---------------------------------------- */
+  .slider__item {
+    padding: 80px 0 40px;
+  }
+  .slider__item--1 {
+    background: url(../img/sliderbg1.jpg) no-repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 0;
+  }
+  .slider__heading {
+    font: 400 47px/54px "ProximaNova-Bold", sans-serif;
+    margin-bottom: 35px;
+  }
+  .slider__subheading {
+    font: 400 14px/20px sans-serif;
+    margin-bottom: 50px;
+  }
+}
+@media only screen and (min-width: 960px) {
+  /* ---------------------------------------- */
+  /* S L I D E R    S T Y L E S               */
+  /* ---------------------------------------- */
+  .slider__heading {
+    font: 400 60px/66px "ProximaNova-Bold", sans-serif;
+  }
+  .slider__subheading {
+    font: 400 14px/26px sans-serif;
+    margin-bottom: 40px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  /* ---------------------------------------- */
+  /* S L I D E R    S T Y L E S               */
+  /* ---------------------------------------- */
+  .slider__heading {
+    font: 400 69px/72px "ProximaNova-Bold", sans-serif;
+  }
+  .slider__subheading {
+    font: 400 17px/26px sans-serif;
+    margin-bottom: 90px;
   }
 }
