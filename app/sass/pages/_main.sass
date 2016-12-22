@@ -1,4 +1,8 @@
 +comment('general style')
++font('ProximaNova-Bold', 'ProximaNova-Bold')
++font('ProximaNova-ExtraBold', 'ProximaNova-ExtraBold')
++font('ProximaNova-Light', 'ProximaNova-Light')
++font('ProximaNova-Regular', 'ProximaNova-Regular')
 +ic
 .text-danger
   color: #e74c3c
@@ -63,6 +67,49 @@
   border-top: 7px solid \9
   border-right: 5px solid transparent
   border-left: 5px solid transparent
++comment('slider styles')   
+.slider
+  &__item
+    padding: 40px 0 20px
+    &--1
+      background: url(../img/sliderbg1-320.jpg) no-repeat
+      +cover(50% 0)
+  &__heading
+    color: #fff
+    font: 400 29px/36px $font-pb 
+    margin: 0 0 25px
+  &__subheading
+    color: #fff
+    font: 400 12px/14px sans-serif
+    margin-bottom: 20px
+  &__btn  
+    display: inline-block
+    position: relative
+    color: #fff
+    font: 700 13px/14px sans-serif
+    text-transform: uppercase
+    border: 3px solid #fff
+    padding: 15px 16px
+    z-index: 10
+    overflow: hidden
+    &:before
+      content: ''
+      display: block
+      position: absolute
+      z-index: -1
+      left: 0
+      top: -105%
+      height: 100%
+      width: 100%
+      background-color: #ac183c
+      transition: all 0.2s ease
+    &:hover,
+    &:focus,
+    &:visited
+      text-decoration: none
+      color: #fff
+      &:before
+        top: 0
 +rx(767)
   .collapse
     &--display
@@ -70,6 +117,37 @@
       height: auto !important
       padding-bottom: 0px
       overflow: visible !important
-
-
-
++r(768)
+  +comment('slider styles') 
+  .slider
+    &__item
+      padding: 80px 0 40px
+      &--1
+        background: url(../img/sliderbg1.jpg) no-repeat
+        +cover(50% 0)
+    &__heading
+      font: 400 47px/54px $font-pb 
+      margin-bottom: 35px
+    &__subheading
+      font: 400 14px/20px sans-serif
+      margin-bottom: 50px
+    &__btn
+      padding: 18px 40px 
+      letter-spacing: 1px 
+      margin-bottom: 40px
++r(960)
+  +comment('slider styles') 
+  .slider
+    &__heading
+      font: 400 60px/66px $font-pb 
+    &__subheading
+      font: 400 14px/26px sans-serif
+      margin-bottom: 40px
++r(1200)      
+  +comment('slider styles') 
+  .slider
+    &__heading
+      font: 400 69px/72px $font-pb 
+    &__subheading
+      font: 400 17px/26px sans-serif
+      margin-bottom: 90px
