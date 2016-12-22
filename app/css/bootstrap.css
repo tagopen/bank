@@ -1589,15 +1589,15 @@ pre code {
 }
 @media (min-width: 768px) {
   .container {
-    width: 750px;
+    width: 655px;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 960px) {
   .container {
-    width: 970px;
+    width: 780px;
   }
 }
-@media (min-width: 1054px) {
+@media (min-width: 1200px) {
   .container {
     width: 1024px;
   }
