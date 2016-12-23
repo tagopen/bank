@@ -3,6 +3,8 @@
 +font('ProximaNova-ExtraBold', 'ProximaNova-ExtraBold')
 +font('ProximaNova-Light', 'ProximaNova-Light')
 +font('ProximaNova-Regular', 'ProximaNova-Regular')
++font('MullerMedium', 'MullerMedium')
++font('MullerExtraBold', 'MullerExtraBold')
 +ic
 .text-danger
   color: #e74c3c
@@ -17,12 +19,9 @@
   &:focus
     color: #fff
     text-decoration: none
-.ic
-  &--1
-    &:before
-      width: 26px
-      height: 27px
-      background: transparent url(../img/icons/dropdown-btn.png) no-repeat scroll 0 0
+@each $ic in dropdown-btn, exchange, credit, insurance, transfer, currency, bill, extra
+  .ic--#{$ic}
+    +sb(#{$ic})
 +comment("home page style")
 +comment('section navbar styles')
 .navbar
@@ -245,3 +244,44 @@
     &__subheading
       font: 400 17px/26px sans-serif
       margin-bottom: 90px
++comment('section service style')
+.service
+.product
+  margin: 5px 0
+  padding: 20px
+  height: 100%
+  box-shadow: 0 4px 19px rgba(0, 0, 0, 0.1)
+  &__photo
+    position: relative
+    height: 160px
+  &__icon
+    &:before
+      position: absolute
+      margin: auto
+      left: 0
+      right: 0
+      bottom: 40px
+  &__heading
+    margin: 0 0 30px
+    font: 400 24px/26px $font-muller-extra-bold
+    color: #ac183c
+  &__descr
+    font: 400 14px/16px $font-muller-medium
+.layer
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  &__icon
+    color: $layer-icon-color
+    &--plus
+      font-size: 8px
+    &--circle
+      font-size: 11px
+
+
+
+
+
+
+

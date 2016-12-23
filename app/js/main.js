@@ -1,3 +1,17 @@
+// Equal Height function
+$.fn.equialHeight = function() {
+  var $tallestcolumn = 0;
+  var $currentHeight = 0;
+  $.each($(this), function (index, value) {
+    $currentHeight = $(this).height();
+    if($currentHeight > $tallestcolumn)
+    {
+      $tallestcolumn = $currentHeight;
+    }
+  });
+  $(this).height($tallestcolumn);
+  return $(this);
+} 
 // Old browser notification
 $(function() { 
   $.reject({
@@ -28,3 +42,11 @@ $('.slider').slick({
   swipeToSlide: '15',
   cssEase: 'ease-out'
 });
+
+// Equial Height
+$(window).on('resize', function(){
+  if( $( window ).width() >= 768 ) {
+    $('.service__item').equialHeight();
+    $('.product__text').equialHeight();
+  }
+}).trigger('resize');

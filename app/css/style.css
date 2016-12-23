@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /* fonts */
 /* navbar */
+/* layer */
 /* ------------------------------------------------------------------ */
 /* O L D - B R O W S E R    J R E J E C T    N O T I F I C A T I O N  */
 /* ------------------------------------------------------------------ */
@@ -191,7 +192,7 @@
 /* S L I C K - S L I D E R    T H E M E    S T Y L E  */
 /* -------------------------------------------------- */
 .slick-loading .slick-list {
-  background: #fff url('../img/ajax-loader.gif') center center no-repeat;
+  background: #fff url('../img/ajax-loader.gif?1479133347') center center no-repeat;
 }
 
 /* Icons */
@@ -368,6 +369,20 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "MullerMedium";
+  src: url("../font/MullerMedium/MullerMedium.eot");
+  src: url("../font/MullerMedium/MullerMedium.eot?#iefix") format("embedded-opentype"), url("../font/MullerMedium/MullerMedium.woff2") format("woff2"), url("../font/MullerMedium/MullerMedium.woff") format("woff"), url("../font/MullerMedium/MullerMedium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MullerExtraBold";
+  src: url("../font/MullerExtraBold/MullerExtraBold.eot");
+  src: url("../font/MullerExtraBold/MullerExtraBold.eot?#iefix") format("embedded-opentype"), url("../font/MullerExtraBold/MullerExtraBold.woff2") format("woff2"), url("../font/MullerExtraBold/MullerExtraBold.woff") format("woff"), url("../font/MullerExtraBold/MullerExtraBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 .ic {
   display: inline-block;
   vertical-align: middle;
@@ -398,10 +413,52 @@
   text-decoration: none;
 }
 
-.ic--1:before {
+.ic--dropdown-btn:before {
   width: 26px;
   height: 27px;
-  background: transparent url(../img/icons/dropdown-btn.png) no-repeat scroll 0 0;
+  background: url('../img/icons-s133bee3d33.png') 0 0 no-repeat;
+}
+
+.ic--exchange:before {
+  width: 60px;
+  height: 77px;
+  background: url('../img/icons-s133bee3d33.png') 0 -162px no-repeat;
+}
+
+.ic--credit:before {
+  width: 85px;
+  height: 71px;
+  background: url('../img/icons-s133bee3d33.png') 0 -91px no-repeat;
+}
+
+.ic--insurance:before {
+  width: 72px;
+  height: 84px;
+  background: url('../img/icons-s133bee3d33.png') 0 -322px no-repeat;
+}
+
+.ic--transfer:before {
+  width: 85px;
+  height: 85px;
+  background: url('../img/icons-s133bee3d33.png') 0 -406px no-repeat;
+}
+
+.ic--currency:before {
+  width: 77px;
+  height: 83px;
+  background: url('../img/icons-s133bee3d33.png') 0 -239px no-repeat;
+}
+
+.ic--bill:before {
+  width: 77px;
+  height: 86px;
+  background: url('../img/icons-s133bee3d33.png') 0 -491px no-repeat;
+}
+
+.ic--extra:before {
+  width: 71px;
+  height: 64px;
+  background: url('../img/icons-s133bee3d33.png') 0 -27px no-repeat;
 }
 
 /* ---------------------------------------- */
@@ -499,11 +556,11 @@
   }
   .dropdown__icon:before {
     position: absolute;
+    margin: auto;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    margin: auto;
   }
 
   .collapse--display {
@@ -710,4 +767,51 @@
     font: 400 17px/26px sans-serif;
     margin-bottom: 90px;
   }
+}
+/* -------------------------------------------- */
+/* S E C T I O N    S E R V I C E    S T Y L E  */
+/* -------------------------------------------- */
+.product {
+  margin: 5px 0;
+  padding: 20px;
+  height: 100%;
+  -webkit-box-shadow: 0 4px 19px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 19px rgba(0, 0, 0, 0.1);
+}
+.product__photo {
+  position: relative;
+  height: 160px;
+}
+.product__icon:before {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  bottom: 40px;
+}
+.product__heading {
+  margin: 0 0 30px;
+  font: 400 24px/26px "MullerExtraBold", sans-serif;
+  color: #ac183c;
+}
+.product__descr {
+  font: 400 14px/16px "MullerMedium", sans-serif;
+}
+
+.layer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.layer__icon {
+  color: #ac183c;
+}
+.layer__icon--plus {
+  font-size: 8px;
+}
+.layer__icon--circle {
+  font-size: 11px;
 }
