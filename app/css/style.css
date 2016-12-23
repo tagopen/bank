@@ -383,6 +383,20 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "MyriadProBold";
+  src: url("../font/MyriadProBold/MyriadProBold.eot");
+  src: url("../font/MyriadProBold/MyriadProBold.eot?#iefix") format("embedded-opentype"), url("../font/MyriadProBold/MyriadProBold.woff2") format("woff2"), url("../font/MyriadProBold/MyriadProBold.woff") format("woff"), url("../font/MyriadProBold/MyriadProBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MyriadProRegular";
+  src: url("../font/MyriadProRegular/MyriadProRegular.eot");
+  src: url("../font/MyriadProRegular/MyriadProRegular.eot?#iefix") format("embedded-opentype"), url("../font/MyriadProRegular/MyriadProRegular.woff2") format("woff2"), url("../font/MyriadProRegular/MyriadProRegular.woff") format("woff"), url("../font/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 .ic {
   display: inline-block;
   vertical-align: middle;
@@ -619,6 +633,57 @@
 }
 .currency__content {
   padding: 20px 10px 0 20px;
+}
+
+/* ---------------------------------------- */
+/* F O O T E R    S T Y L E S               */
+/* ---------------------------------------- */
+.footer {
+  margin-top: 30px;
+  padding: 30px 0 0;
+  background-color: #e2e2e2;
+}
+.footer__heading {
+  color: #b01641;
+  text-transform: uppercase;
+  font: 700 12px/14px "Leto Sans", sans-serif;
+  margin: 0 0 20px;
+}
+.footer__list {
+  padding: 0;
+  margin-bottom: 25px;
+}
+.footer__item {
+  list-style-type: none;
+  font: 400 12px/14px "Leto Sans", sans-serif;
+}
+.footer__link {
+  color: #282828;
+}
+.footer__link:hover, .footer__link:focus, .footer__link:visited {
+  color: #282828;
+  text-decoration: none;
+}
+.footer__link:hover {
+  color: #b01641;
+}
+
+.copyright {
+  padding: 25px 0;
+  background: url(../img/copyrightbg.jpg) repeat;
+}
+.copyright__text {
+  color: #fff;
+  font: 400 14px/16px "MyriadProRegular", sans-serif;
+}
+.copyright__link {
+  color: #fff;
+}
+.copyright__link:hover {
+  color: #b01641;
+}
+.copyright__link:hover, .copyright__link:visited, .copyright__link:focus {
+  text-decoration: none;
 }
 
 @media only screen and (max-width: 767px) {
@@ -907,5 +972,20 @@
   }
   .service__title {
     font: 400 39px/40px "MullerExtraBold", sans-serif;
+  }
+
+  /* ---------------------------------------- */
+  /* F O O T E R    S T Y L E S               */
+  /* ---------------------------------------- */
+  .footer__heading {
+    font: 400 14px/16px "Leto Sans", sans-serif;
+  }
+}
+@media only screen and (min-width: 960px) {
+  /* ---------------------------------------- */
+  /* F O O T E R    S T Y L E S               */
+  /* ---------------------------------------- */
+  .footer__heading {
+    font: 400 16px/18px "Leto Sans", sans-serif;
   }
 }
