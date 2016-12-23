@@ -25,5 +25,6 @@ $('.slider').slick({
   slidesToShow: 1,
   appendDots: '.slider__markers',
   speed: 500,
+  swipeToSlide: '15',
   cssEase: 'ease-out'
 });
