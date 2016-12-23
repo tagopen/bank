@@ -5,6 +5,8 @@
 +font('ProximaNova-Regular', 'ProximaNova-Regular')
 +font('MullerMedium', 'MullerMedium')
 +font('MullerExtraBold', 'MullerExtraBold')
++font('MyriadProBold', 'MyriadProBold')
++font('MyriadProRegular', 'MyriadProRegular')
 +ic
 .text-danger
   color: #e74c3c
@@ -78,16 +80,34 @@
   border-top: 7px solid \9
   border-right: 5px solid transparent
   border-left: 5px solid transparent
-+comment('service styles')      
++comment('service styles')  
 .service
-  &__box
-    margin: 5px 0
-    height: 100%
-    box-shadow: 0 4px 19px rgba(0, 0, 0, 0.1)
-    padding: 20px 0 0
   &__heading
-    padding: 0 20px
+    padding: 20px 0 15px
+    box-shadow: 0 2px 2px rgba(41, 41, 41, 0.12)
+    background-color: #fff
+    margin-bottom: 20px
+  &__title
+    margin: 0    
+    color: #ac183c
+    font: 400 26px/30px $font-muller-extra-bold
+.rss
+  padding-top: 5px
+  &__link
+    color: #ac183c
+  &__icon
+    margin-right: 10px  
+  &__text
+    text-decoration: underline 
+    font: 400 18px/20px $font-muller-medium
+.currency
+  margin: 5px 0
+  height: 100%
+  box-shadow: 0 4px 19px rgba(0, 0, 0, 0.1)
+  &__heading
+    padding: 20px 20px 0
     margin-bottom: 10px !important 
+    background-color: #fff
   &__title
     margin: 0 0 10px 
     color: #ac183c
@@ -97,19 +117,20 @@
     border: 0 
   &__link
     color: #ac183c 
-    margin: 0
+    margin: 0 !important
     border-bottom: 1px dashed #ac183c !important
     padding: 0 !important
+    border-radius: 0 !important
     &:hover,
     &:focus,
     &:visited
       color: #282828
       text-decoration: none
-  &__it
+  &__item
     margin-right: 10px
     position: relative
     &.active
-      .service__link
+      .currency__link
         color: #282828 
         border: 0 !important
         padding: 0 !important
@@ -122,7 +143,46 @@
         bottom: -10px
         background-color: #ac183c 
   &__content
-    padding: 20px 10px 0 20px      
+    padding: 20px 10px 0 20px    
++comment('footer styles')    
+.footer
+  margin-top: 30px
+  padding: 30px 0 0
+  background-color: #e2e2e2  
+  &__heading
+    color: #b01641
+    text-transform: uppercase
+    font: 700 12px/14px $font-leto
+    margin: 0 0 20px
+  &__list
+    padding: 0
+    margin-bottom: 25px
+  &__item
+    list-style-type: none  
+    font: 400 12px/14px $font-leto
+  &__link  
+    color: #282828
+    &:hover,
+    &:focus,
+    &:visited
+      color: #282828
+      text-decoration: none
+    &:hover
+      color: #b01641 
+.copyright
+  padding: 25px 0
+  background: url(../img/copyrightbg.jpg) repeat
+  &__text
+    color: #fff   
+    font: 400 14px/16px $font-myriad-regular
+  &__link
+    color: #fff
+    &:hover
+      color: #b01641 
+    &:hover,
+    &:visited,
+    &:focus
+      text-decoration: none      
 +rx(767)
   .nav  
     &--1
@@ -428,3 +488,19 @@
     &:after
       left: -16px
       bottom: -4px
++r(768)   
+  .service
+    &__heading
+      padding: 35px 0 10px
+      margin-bottom: 35px
+    &__title  
+      font: 400 39px/40px $font-muller-extra-bold 
+  +comment('footer styles')    
+  .footer  
+    &__heading
+      font: 400 14px/16px $font-leto
++r(960)       
+  +comment('footer styles')    
+  .footer  
+    &__heading
+      font: 400 16px/18px $font-leto  
