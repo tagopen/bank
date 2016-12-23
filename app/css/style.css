@@ -192,7 +192,7 @@
 /* S L I C K - S L I D E R    T H E M E    S T Y L E  */
 /* -------------------------------------------------- */
 .slick-loading .slick-list {
-  background: #fff url('../img/ajax-loader.gif?1482499946') center center no-repeat;
+  background: #fff url('../img/ajax-loader.gif?1479133347') center center no-repeat;
 }
 
 /* Icons */
@@ -413,48 +413,80 @@
   text-decoration: none;
 }
 
+.ic--dropdown-btn {
+  width: 26px;
+  height: 27px;
+}
 .ic--dropdown-btn:before {
   width: 26px;
   height: 27px;
   background: url('../img/icons-s133bee3d33.png') 0 0 no-repeat;
 }
 
+.ic--exchange {
+  width: 60px;
+  height: 77px;
+}
 .ic--exchange:before {
   width: 60px;
   height: 77px;
   background: url('../img/icons-s133bee3d33.png') 0 -162px no-repeat;
 }
 
+.ic--credit {
+  width: 85px;
+  height: 71px;
+}
 .ic--credit:before {
   width: 85px;
   height: 71px;
   background: url('../img/icons-s133bee3d33.png') 0 -91px no-repeat;
 }
 
+.ic--insurance {
+  width: 72px;
+  height: 84px;
+}
 .ic--insurance:before {
   width: 72px;
   height: 84px;
   background: url('../img/icons-s133bee3d33.png') 0 -322px no-repeat;
 }
 
+.ic--transfer {
+  width: 85px;
+  height: 85px;
+}
 .ic--transfer:before {
   width: 85px;
   height: 85px;
   background: url('../img/icons-s133bee3d33.png') 0 -406px no-repeat;
 }
 
+.ic--currency {
+  width: 77px;
+  height: 83px;
+}
 .ic--currency:before {
   width: 77px;
   height: 83px;
   background: url('../img/icons-s133bee3d33.png') 0 -239px no-repeat;
 }
 
+.ic--bill {
+  width: 77px;
+  height: 86px;
+}
 .ic--bill:before {
   width: 77px;
   height: 86px;
   background: url('../img/icons-s133bee3d33.png') 0 -491px no-repeat;
 }
 
+.ic--extra {
+  width: 71px;
+  height: 64px;
+}
 .ic--extra:before {
   width: 71px;
   height: 64px;
@@ -837,7 +869,7 @@
   position: relative;
   height: 160px;
 }
-.product__icon:before {
+.product__icon {
   position: absolute;
   margin: auto;
   left: 0;
@@ -854,19 +886,138 @@
 }
 
 .layer {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-.layer__icon {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   color: #ac183c;
 }
-.layer__icon--plus {
-  font-size: 8px;
+.layer:before, .layer:after {
+  position: absolute;
 }
-.layer__icon--circle {
-  font-size: 11px;
+.layer--circle {
+  font-size: 10px;
+}
+.layer--circle:before, .layer--circle:after {
+  content: "";
+}
+.layer--plus {
+  font-size: 9px;
+}
+.layer--plus:before, .layer--plus:after {
+  content: "";
+}
+.layer--1:before {
+  top: -13px;
+  right: -11px;
+}
+.layer--1:after {
+  left: -22px;
+  bottom: 7px;
+}
+.layer--2:before {
+  top: 4px;
+  left: -9px;
+}
+.layer--2:after {
+  right: -10px;
+  bottom: -2px;
+}
+.layer--3:before {
+  top: 2px;
+  left: -13px;
+}
+.layer--3:after {
+  right: -16px;
+  bottom: 0;
+}
+.layer--4:before {
+  top: -9px;
+  right: -2px;
+}
+.layer--4:after {
+  left: -16px;
+  bottom: 8px;
+}
+.layer--5:before {
+  top: -13px;
+  right: -14px;
+}
+.layer--5:after {
+  top: 19px;
+  left: -18px;
+}
+.layer--6:before {
+  top: -19px;
+  left: 12px;
+}
+.layer--6:after {
+  right: 4px;
+  bottom: -1px;
+}
+.layer--7:before {
+  top: -15px;
+  right: -1px;
+}
+.layer--7:after {
+  left: -19px;
+  bottom: 18px;
+}
+.layer--8:before {
+  top: -10px;
+  left: -22px;
+}
+.layer--8:after {
+  right: -9px;
+  bottom: 37px;
+}
+.layer--9:before {
+  top: -11px;
+  left: -12px;
+}
+.layer--9:after {
+  right: 16px;
+  bottom: -12px;
+}
+.layer--10:before {
+  top: 7px;
+  right: -3px;
+}
+.layer--10:after {
+  left: -15px;
+  bottom: 0;
+}
+.layer--11:before {
+  top: 30px;
+  right: -12px;
+}
+.layer--11:after {
+  left: -5px;
+  bottom: 13px;
+}
+.layer--12:before {
+  top: -4px;
+  left: -5px;
+}
+.layer--12:after {
+  right: -15px;
+  bottom: 0;
+}
+.layer--13:before {
+  top: -6px;
+  left: -5px;
+}
+.layer--13:after {
+  right: -15px;
+  bottom: 22px;
+}
+.layer--14:before {
+  top: -13px;
+  right: 10px;
+}
+.layer--14:after {
+  left: -16px;
+  bottom: -4px;
 }

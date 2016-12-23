@@ -298,12 +298,11 @@
     position: relative
     height: 160px
   &__icon
-    &:before
-      position: absolute
-      margin: auto
-      left: 0
-      right: 0
-      bottom: 40px
+    position: absolute
+    margin: auto
+    left: 0
+    right: 0
+    bottom: 40px
   &__heading
     margin: 0 0 30px
     font: 400 24px/26px $font-muller-extra-bold
@@ -311,13 +310,121 @@
   &__descr
     font: 400 14px/16px $font-muller-medium
 .layer
-  position: absolute
-  top: 50%
-  left: 50%
-  transform: translate(-50%, -50%)
-  &__icon
-    color: $layer-icon-color
-    &--plus
-      font-size: 8px
-    &--circle
-      font-size: 11px
+  display: inline-block
+  font: normal normal normal 14px/1 FontAwesome
+  font-size: inherit
+  text-rendering: auto
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  color: $layer-icon-color
+  &:before,
+  &:after
+    position: absolute
+  &--circle
+    font-size: 10px
+    &:before,
+    &:after
+      content: '\f10c'
+  &--plus
+    font-size: 9px
+    &:before,
+    &:after
+      content: '\f067'
+  &--1
+    &:before
+      top: -13px
+      right: -11px
+    &:after
+      left: -22px
+      bottom: 7px
+  &--2
+    &:before
+      top: 4px
+      left: -9px
+    &:after    
+      right: -10px
+      bottom: -2px
+  &--3
+    &:before    
+      top: 2px
+      left: -13px
+    &:after
+      right: -16px
+      bottom: 0
+  &--4
+    &:before
+      top: -9px
+      right: -2px
+    &:after
+      left: -16px
+      bottom: 8px
+  &--5
+    &:before
+      top: -13px
+      right: -14px
+    &:after
+      top: 19px
+      left: -18px
+  &--6
+    &:before
+      top: -19px
+      left: 12px
+    &:after
+      right: 4px
+      bottom: -1px
+  &--7
+    &:before
+      top: -15px
+      right: -1px
+    &:after
+      left: -19px
+      bottom: 18px
+  &--8
+    &:before
+      top: -10px
+      left: -22px
+    &:after
+      right: -9px
+      bottom: 37px
+  &--9
+    &:before
+      top: -11px
+      left: -12px
+    &:after
+      right: 16px
+      bottom: -12px
+  &--10
+    &:before
+      top: 7px
+      right: -3px
+    &:after
+      left: -15px
+      bottom: 0
+  &--11
+    &:before
+      top: 30px
+      right: -12px
+    &:after
+      left: -5px
+      bottom: 13px
+  &--12
+    &:before
+      top: -4px
+      left: -5px
+    &:after
+      right: -15px
+      bottom: 0
+  &--13
+    &:before
+      top: -6px
+      left: -5px
+    &:after
+      right: -15px
+      bottom: 22px
+  &--14
+    &:before
+      top: -13px
+      right: 10px
+    &:after
+      left: -16px
+      bottom: -4px
