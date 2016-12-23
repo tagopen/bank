@@ -192,7 +192,7 @@
 /* S L I C K - S L I D E R    T H E M E    S T Y L E  */
 /* -------------------------------------------------- */
 .slick-loading .slick-list {
-  background: #fff url('../img/ajax-loader.gif?1479133347') center center no-repeat;
+  background: #fff url('../img/ajax-loader.gif?1482499946') center center no-repeat;
 }
 
 /* Icons */
@@ -471,6 +471,7 @@
   border: 0 none;
   -webkit-box-shadow: 20px 0 50px rgba(0, 0, 0, 0.08);
           box-shadow: 20px 0 50px rgba(0, 0, 0, 0.08);
+  margin-bottom: 0;
 }
 .navbar__container {
   padding-left: 0;
@@ -536,6 +537,61 @@
   border-left: 5px solid transparent;
 }
 
+/* ---------------------------------------- */
+/* S E R V I C E    S T Y L E S             */
+/* ---------------------------------------- */
+.service__box {
+  margin: 5px 0;
+  height: 100%;
+  -webkit-box-shadow: 0 4px 19px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 19px rgba(0, 0, 0, 0.1);
+  padding: 20px 0 0;
+}
+.service__heading {
+  padding: 0 20px;
+  margin-bottom: 10px !important;
+}
+.service__title {
+  margin: 0 0 10px;
+  color: #ac183c;
+  font: 400 26px/30px "MullerExtraBold", sans-serif;
+  text-decoration: underline;
+}
+.service__tabs {
+  border: 0;
+}
+.service__link {
+  color: #ac183c;
+  margin: 0;
+  border-bottom: 1px dashed #ac183c !important;
+  padding: 0 !important;
+}
+.service__link:hover, .service__link:focus, .service__link:visited {
+  color: #282828;
+  text-decoration: none;
+}
+.service__it {
+  margin-right: 10px;
+  position: relative;
+}
+.service__it.active .service__link {
+  color: #282828;
+  border: 0 !important;
+  padding: 0 !important;
+}
+.service__it.active:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 3px;
+  bottom: -10px;
+  background-color: #ac183c;
+}
+.service__content {
+  padding: 20px 10px 0 20px;
+}
+
 @media only screen and (max-width: 767px) {
   .nav--1 {
     padding: 20px 0;
@@ -555,11 +611,11 @@
   }
   .dropdown__icon:before {
     position: absolute;
-    margin: auto;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
+    margin: auto;
   }
 
   .collapse--display {
