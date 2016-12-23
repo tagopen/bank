@@ -540,46 +540,75 @@
 /* ---------------------------------------- */
 /* S E R V I C E    S T Y L E S             */
 /* ---------------------------------------- */
-.service__box {
+.service__heading {
+  padding: 20px 0 15px;
+  -webkit-box-shadow: 0 2px 2px rgba(41, 41, 41, 0.12);
+          box-shadow: 0 2px 2px rgba(41, 41, 41, 0.12);
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+.service__title {
+  margin: 0;
+  color: #ac183c;
+  font: 400 26px/30px "MullerExtraBold", sans-serif;
+}
+
+.rss {
+  padding-top: 5px;
+}
+.rss__link {
+  color: #ac183c;
+}
+.rss__icon {
+  margin-right: 10px;
+}
+.rss__text {
+  text-decoration: underline;
+  font: 400 18px/20px "MullerMedium", sans-serif;
+}
+
+.currency {
   margin: 5px 0;
   height: 100%;
   -webkit-box-shadow: 0 4px 19px rgba(0, 0, 0, 0.1);
           box-shadow: 0 4px 19px rgba(0, 0, 0, 0.1);
-  padding: 20px 0 0;
 }
-.service__heading {
-  padding: 0 20px;
+.currency__heading {
+  padding: 20px 20px 0;
   margin-bottom: 10px !important;
+  background-color: #fff;
 }
-.service__title {
+.currency__title {
   margin: 0 0 10px;
   color: #ac183c;
   font: 400 26px/30px "MullerExtraBold", sans-serif;
   text-decoration: underline;
 }
-.service__tabs {
+.currency__tabs {
   border: 0;
 }
-.service__link {
+.currency__link {
   color: #ac183c;
-  margin: 0;
+  margin: 0 !important;
   border-bottom: 1px dashed #ac183c !important;
   padding: 0 !important;
+  -webkit-border-radius: 0 !important;
+          border-radius: 0 !important;
 }
-.service__link:hover, .service__link:focus, .service__link:visited {
+.currency__link:hover, .currency__link:focus, .currency__link:visited {
   color: #282828;
   text-decoration: none;
 }
-.service__it {
+.currency__item {
   margin-right: 10px;
   position: relative;
 }
-.service__it.active .service__link {
+.currency__item.active .currency__link {
   color: #282828;
   border: 0 !important;
   padding: 0 !important;
 }
-.service__it.active:after {
+.currency__item.active:after {
   content: "";
   position: absolute;
   display: block;
@@ -588,7 +617,7 @@
   bottom: -10px;
   background-color: #ac183c;
 }
-.service__content {
+.currency__content {
   padding: 20px 10px 0 20px;
 }
 
@@ -869,4 +898,14 @@
 }
 .layer__icon--circle {
   font-size: 11px;
+}
+
+@media only screen and (min-width: 768px) {
+  .service__heading {
+    padding: 35px 0 10px;
+    margin-bottom: 35px;
+  }
+  .service__title {
+    font: 400 39px/40px "MullerExtraBold", sans-serif;
+  }
 }

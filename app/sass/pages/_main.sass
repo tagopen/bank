@@ -78,16 +78,34 @@
   border-top: 7px solid \9
   border-right: 5px solid transparent
   border-left: 5px solid transparent
-+comment('service styles')      
++comment('service styles')  
 .service
-  &__box
-    margin: 5px 0
-    height: 100%
-    box-shadow: 0 4px 19px rgba(0, 0, 0, 0.1)
-    padding: 20px 0 0
   &__heading
-    padding: 0 20px
+    padding: 20px 0 15px
+    box-shadow: 0 2px 2px rgba(41, 41, 41, 0.12)
+    background-color: #fff
+    margin-bottom: 20px
+  &__title
+    margin: 0    
+    color: #ac183c
+    font: 400 26px/30px $font-muller-extra-bold
+.rss
+  padding-top: 5px
+  &__link
+    color: #ac183c
+  &__icon
+    margin-right: 10px  
+  &__text
+    text-decoration: underline 
+    font: 400 18px/20px $font-muller-medium
+.currency
+  margin: 5px 0
+  height: 100%
+  box-shadow: 0 4px 19px rgba(0, 0, 0, 0.1)
+  &__heading
+    padding: 20px 20px 0
     margin-bottom: 10px !important 
+    background-color: #fff
   &__title
     margin: 0 0 10px 
     color: #ac183c
@@ -97,19 +115,20 @@
     border: 0 
   &__link
     color: #ac183c 
-    margin: 0
+    margin: 0 !important
     border-bottom: 1px dashed #ac183c !important
     padding: 0 !important
+    border-radius: 0 !important
     &:hover,
     &:focus,
     &:visited
       color: #282828
       text-decoration: none
-  &__it
+  &__item
     margin-right: 10px
     position: relative
     &.active
-      .service__link
+      .currency__link
         color: #282828 
         border: 0 !important
         padding: 0 !important
@@ -321,3 +340,10 @@
       font-size: 8px
     &--circle
       font-size: 11px
++r(768)   
+  .service
+    &__heading
+      padding: 35px 0 10px
+      margin-bottom: 35px
+    &__title  
+      font: 400 39px/40px $font-muller-extra-bold 
