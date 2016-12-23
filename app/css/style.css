@@ -651,7 +651,6 @@
 }
 
 .currency {
-  margin: 5px 0;
   height: 100%;
   -webkit-box-shadow: 0 4px 19px rgba(0, 0, 0, 0.1);
           box-shadow: 0 4px 19px rgba(0, 0, 0, 0.1);
@@ -939,7 +938,6 @@
 /* S E C T I O N    S E R V I C E    S T Y L E  */
 /* -------------------------------------------- */
 .product {
-  margin: 5px 0;
   padding: 20px;
   height: 100%;
   -webkit-box-shadow: 0 4px 19px rgba(0, 0, 0, 0.1);
