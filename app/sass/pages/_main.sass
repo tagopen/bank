@@ -1,5 +1,7 @@
 +comment('general style')
-+font('ProximaNova-Bold', 'ProximaNova-Bold')
++font('LetoSansThin', 'LetoSansThin')
++font('LetoSans', 'LetoSans')
++font('LetoSansBold', 'LetoSansBold')
 +font('ProximaNova-ExtraBold', 'ProximaNova-ExtraBold')
 +font('ProximaNova-Light', 'ProximaNova-Light')
 +font('ProximaNova-Regular', 'ProximaNova-Regular')
@@ -82,6 +84,7 @@
   border-left: 5px solid transparent
 +comment('service styles')  
 .service
+  padding-bottom: 40px
   &__heading
     padding: 20px 0 15px
     box-shadow: 0 2px 2px rgba(41, 41, 41, 0.12)
@@ -144,44 +147,6 @@
         background-color: #ac183c 
   &__content
     padding: 20px 10px 0 20px    
-+comment('footer styles')    
-.footer
-  padding: 30px 0 0
-  background-color: #e2e2e2  
-  &__heading
-    color: #b01641
-    text-transform: uppercase
-    font: 700 12px/14px $font-leto
-    margin: 0 0 20px
-  &__list
-    padding: 0
-    margin-bottom: 25px
-  &__item
-    list-style-type: none  
-    font: 400 12px/14px $font-leto
-  &__link  
-    color: #282828
-    &:hover,
-    &:focus,
-    &:visited
-      color: #282828
-      text-decoration: none
-    &:hover
-      color: #b01641 
-.copyright
-  padding: 25px 0
-  background: url(../img/copyrightbg.jpg) repeat
-  &__text
-    color: #fff   
-    font: 400 14px/16px $font-myriad-regular
-  &__link
-    color: #fff
-    &:hover
-      color: #b01641 
-    &:hover,
-    &:visited,
-    &:focus
-      text-decoration: none      
 +rx(767)
   .nav  
     &--1
@@ -209,10 +174,10 @@
     &__item
       padding: 30px 5px
     &__link
-      font: 700 11px/13px $font-leto
+      font: 400 11px/13px $font-leto-bold
   .btn-bank
     padding: 10px 20px
-    font: 700 11px/13px $font-leto
+    font: 400 11px/13px $font-leto-bold
   .dropdown
     &__toggle
       margin-top: 17px
@@ -221,14 +186,14 @@
     &__item
       padding: 34px 5px
     &__link
-      font: 700 16px/18px $font-leto
+      font: 400 16px/18px $font-leto-bold
   .logo
     width: 236px
     height: 89px
     background: transparent url(../img/logo/logo.jpg) no-repeat scroll 0 0
   .btn-bank
     padding: 15px 30px
-    font: 700 16px/18px $font-leto
+    font: 400 16px/18px $font-leto-bold
 +r(1200)
   .navbar
     padding-right: 20px
@@ -487,6 +452,44 @@
     &:after
       left: -16px
       bottom: -4px
++comment('footer styles')    
+.footer
+  padding: 30px 0 0
+  background-color: #e2e2e2  
+  &__heading
+    color: #b01641
+    text-transform: uppercase
+    font: 400 12px/14px $font-leto-bold
+    margin: 0 0 20px
+  &__list
+    padding: 0
+    margin-bottom: 25px
+  &__item
+    list-style-type: none  
+    font: 400 12px/15px $font-leto
+  &__link  
+    color: #282828
+    transition: .3s ease-out color
+    &:hover,
+    &:focus,
+    &:visited
+      color: #000
+      text-decoration: none
+    &:hover
+      color: #b01641 
+.copyright
+  padding: 25px 0
+  background: url(../img/copyrightbg.jpg) repeat
+  &__text
+    color: #fff   
+    font: 400 14px/16px $font-myriad-regular
+  &__link
+    color: #fff
+    &:hover,
+    &:visited,
+    &:focus
+      color: #fff
+      text-decoration: none      
 +r(768)   
   .service
     &__heading
@@ -497,12 +500,12 @@
   +comment('footer styles')    
   .footer  
     &__heading
-      font: 400 14px/16px $font-leto
+      font: 400 14px/16px $font-leto-bold
 +r(960)       
   +comment('footer styles')    
   .footer  
     &__heading
-      font: 400 16px/18px $font-leto  
+      font: 400 15px/16px $font-leto-bold
 +comment("about page style")
 .heading
   padding: 40px 0

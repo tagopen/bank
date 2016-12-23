@@ -192,7 +192,7 @@
 /* S L I C K - S L I D E R    T H E M E    S T Y L E  */
 /* -------------------------------------------------- */
 .slick-loading .slick-list {
-  background: #fff url('../img/ajax-loader.gif?1482499946') center center no-repeat;
+  background: #fff url('../img/ajax-loader.gif?1482523269') center center no-repeat;
 }
 
 /* Icons */
@@ -342,9 +342,23 @@
 /* G E N E R A L    S T Y L E               */
 /* ---------------------------------------- */
 @font-face {
-  font-family: "ProximaNova-Bold";
-  src: url("../font/ProximaNova-Bold/ProximaNova-Bold.eot");
-  src: url("../font/ProximaNova-Bold/ProximaNova-Bold.eot?#iefix") format("embedded-opentype"), url("../font/ProximaNova-Bold/ProximaNova-Bold.woff2") format("woff2"), url("../font/ProximaNova-Bold/ProximaNova-Bold.woff") format("woff"), url("../font/ProximaNova-Bold/ProximaNova-Bold.ttf") format("truetype");
+  font-family: "LetoSansThin";
+  src: url("../font/LetoSansThin/LetoSansThin.eot");
+  src: url("../font/LetoSansThin/LetoSansThin.eot?#iefix") format("embedded-opentype"), url("../font/LetoSansThin/LetoSansThin.woff2") format("woff2"), url("../font/LetoSansThin/LetoSansThin.woff") format("woff"), url("../font/LetoSansThin/LetoSansThin.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "LetoSans";
+  src: url("../font/LetoSans/LetoSans.eot");
+  src: url("../font/LetoSans/LetoSans.eot?#iefix") format("embedded-opentype"), url("../font/LetoSans/LetoSans.woff2") format("woff2"), url("../font/LetoSans/LetoSans.woff") format("woff"), url("../font/LetoSans/LetoSans.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "LetoSansBold";
+  src: url("../font/LetoSansBold/LetoSansBold.eot");
+  src: url("../font/LetoSansBold/LetoSansBold.eot?#iefix") format("embedded-opentype"), url("../font/LetoSansBold/LetoSansBold.woff2") format("woff2"), url("../font/LetoSansBold/LetoSansBold.woff") format("woff"), url("../font/LetoSansBold/LetoSansBold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -606,6 +620,9 @@
 /* ---------------------------------------- */
 /* S E R V I C E    S T Y L E S             */
 /* ---------------------------------------- */
+.service {
+  padding-bottom: 40px;
+}
 .service__heading {
   padding: 20px 0 15px;
   -webkit-box-shadow: 0 2px 2px rgba(41, 41, 41, 0.12);
@@ -687,56 +704,6 @@
   padding: 20px 10px 0 20px;
 }
 
-/* ---------------------------------------- */
-/* F O O T E R    S T Y L E S               */
-/* ---------------------------------------- */
-.footer {
-  padding: 30px 0 0;
-  background-color: #e2e2e2;
-}
-.footer__heading {
-  color: #b01641;
-  text-transform: uppercase;
-  font: 700 12px/14px "Leto Sans", sans-serif;
-  margin: 0 0 20px;
-}
-.footer__list {
-  padding: 0;
-  margin-bottom: 25px;
-}
-.footer__item {
-  list-style-type: none;
-  font: 400 12px/14px "Leto Sans", sans-serif;
-}
-.footer__link {
-  color: #282828;
-}
-.footer__link:hover, .footer__link:focus, .footer__link:visited {
-  color: #282828;
-  text-decoration: none;
-}
-.footer__link:hover {
-  color: #b01641;
-}
-
-.copyright {
-  padding: 25px 0;
-  background: url(../img/copyrightbg.jpg) repeat;
-}
-.copyright__text {
-  color: #fff;
-  font: 400 14px/16px "MyriadProRegular", sans-serif;
-}
-.copyright__link {
-  color: #fff;
-}
-.copyright__link:hover {
-  color: #b01641;
-}
-.copyright__link:hover, .copyright__link:visited, .copyright__link:focus {
-  text-decoration: none;
-}
-
 @media only screen and (max-width: 767px) {
   .nav--1 {
     padding: 20px 0;
@@ -775,12 +742,12 @@
     padding: 30px 5px;
   }
   .navbar__link {
-    font: 700 11px/13px "Leto Sans", sans-serif;
+    font: 400 11px/13px "LetoSansBold", sans-serif;
   }
 
   .btn-bank {
     padding: 10px 20px;
-    font: 700 11px/13px "Leto Sans", sans-serif;
+    font: 400 11px/13px "LetoSansBold", sans-serif;
   }
 
   .dropdown__toggle {
@@ -792,7 +759,7 @@
     padding: 34px 5px;
   }
   .navbar__link {
-    font: 700 16px/18px "Leto Sans", sans-serif;
+    font: 400 16px/18px "LetoSansBold", sans-serif;
   }
 
   .logo {
@@ -803,7 +770,7 @@
 
   .btn-bank {
     padding: 15px 30px;
-    font: 700 16px/18px "Leto Sans", sans-serif;
+    font: 400 16px/18px "LetoSansBold", sans-serif;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -1135,6 +1102,56 @@
   bottom: -4px;
 }
 
+/* ---------------------------------------- */
+/* F O O T E R    S T Y L E S               */
+/* ---------------------------------------- */
+.footer {
+  padding: 30px 0 0;
+  background-color: #e2e2e2;
+}
+.footer__heading {
+  color: #b01641;
+  text-transform: uppercase;
+  font: 400 12px/14px "LetoSansBold", sans-serif;
+  margin: 0 0 20px;
+}
+.footer__list {
+  padding: 0;
+  margin-bottom: 25px;
+}
+.footer__item {
+  list-style-type: none;
+  font: 400 12px/15px "LetoSans", sans-serif;
+}
+.footer__link {
+  color: #282828;
+  -webkit-transition: 0.3s ease-out color;
+  transition: 0.3s ease-out color;
+}
+.footer__link:hover, .footer__link:focus, .footer__link:visited {
+  color: #000;
+  text-decoration: none;
+}
+.footer__link:hover {
+  color: #b01641;
+}
+
+.copyright {
+  padding: 25px 0;
+  background: url(../img/copyrightbg.jpg) repeat;
+}
+.copyright__text {
+  color: #fff;
+  font: 400 14px/16px "MyriadProRegular", sans-serif;
+}
+.copyright__link {
+  color: #fff;
+}
+.copyright__link:hover, .copyright__link:visited, .copyright__link:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
 @media only screen and (min-width: 768px) {
   .service__heading {
     padding: 35px 0 10px;
@@ -1148,7 +1165,7 @@
   /* F O O T E R    S T Y L E S               */
   /* ---------------------------------------- */
   .footer__heading {
-    font: 400 14px/16px "Leto Sans", sans-serif;
+    font: 400 14px/16px "LetoSansBold", sans-serif;
   }
 }
 @media only screen and (min-width: 960px) {
@@ -1156,7 +1173,7 @@
   /* F O O T E R    S T Y L E S               */
   /* ---------------------------------------- */
   .footer__heading {
-    font: 400 16px/18px "Leto Sans", sans-serif;
+    font: 400 15px/16px "LetoSansBold", sans-serif;
   }
 }
 /* ---------------------------------------- */
