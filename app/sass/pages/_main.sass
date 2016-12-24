@@ -2,7 +2,7 @@
 +font('LetoSansThin', 'LetoSansThin')
 +font('LetoSans', 'LetoSans')
 +font('LetoSansBold', 'LetoSansBold')
-+font('ProximaNova-ExtraBold', 'ProximaNova-ExtraBold')
++font('ProximaNovaExtrabold', 'ProximaNovaExtrabold')
 +font('ProximaNova-Light', 'ProximaNova-Light')
 +font('ProximaNova-Regular', 'ProximaNova-Regular')
 +font('MullerMedium', 'MullerMedium')
@@ -130,7 +130,7 @@
       font: 400 10px/13px $font-leto-bold
   .btn-bank
     padding: 10px 20px
-    font: 400 11px/13px $font-leto-bold
+    font: 400 10px/13px $font-leto-bold
   .dropdown
     &__toggle
       margin-top: 17px
@@ -144,8 +144,8 @@
     width: 236px
     height: 82px
   .btn-bank
-    padding: 15px 30px
-    font: 400 16px/18px $font-leto-bold
+    padding: 15px 23px
+    font: 400 12px/14px $font-leto-bold
 +r(1200)
   .navbar
     padding-right: 20px
@@ -153,6 +153,10 @@
       font: 400 16px/18px $font-leto-bold
   .logo
     height: 86px
+
+  .btn-bank
+    padding: 15px 30px
+    font: 400 16px/18px $font-leto-bold
 +comment('slider styles')   
 .slider
   &__item
@@ -168,17 +172,17 @@
       +cover(50% 0)
   &__heading
     color: #fff
-    font: 400 29px/36px $font-pb 
+    font: 400 29px/36px $font-pex
     margin: 0 0 25px
   &__subheading
     color: #fff
-    font: 400 12px/14px sans-serif
+    font: 400 12px/14px $font-leto
     margin: 0 0 20px
   &__btn  
     display: inline-block
     position: relative
     color: #fff
-    font: 700 13px/14px sans-serif
+    font: 700 13px/14px $font-leto
     text-transform: uppercase
     border: 3px solid #fff
     padding: 15px 16px
@@ -237,10 +241,10 @@
         background: url(../img/sliderbg1.jpg) no-repeat
         +cover(50% 0)  
     &__heading
-      font: 400 47px/54px $font-pb 
+      font: 400 47px/54px $font-pex
       margin-bottom: 35px
     &__subheading
-      font: 400 14px/20px sans-serif
+      font: 400 14px/20px $font-leto
       margin-bottom: 50px
     &__btn
       padding: 18px 40px 
@@ -253,16 +257,16 @@
 +r(960)
   .slider
     &__heading
-      font: 400 60px/66px $font-pb 
+      font: 400 60px/66px $font-pex 
     &__subheading
-      font: 400 14px/26px sans-serif
+      font: 400 14px/26px $font-leto
       margin-bottom: 40px
 +r(1200)      
   .slider
     &__heading
-      font: 400 69px/72px $font-pb 
+      font: 400 69px/72px $font-pex 
     &__subheading
-      font: 400 17px/26px sans-serif
+      font: 400 17px/26px $font-leto
       margin-bottom: 90px
 +comment('section service style')
 .service

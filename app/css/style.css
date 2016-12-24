@@ -363,9 +363,9 @@
   font-style: normal;
 }
 @font-face {
-  font-family: "ProximaNova-ExtraBold";
-  src: url("../font/ProximaNova-ExtraBold/ProximaNova-ExtraBold.eot");
-  src: url("../font/ProximaNova-ExtraBold/ProximaNova-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../font/ProximaNova-ExtraBold/ProximaNova-ExtraBold.woff2") format("woff2"), url("../font/ProximaNova-ExtraBold/ProximaNova-ExtraBold.woff") format("woff"), url("../font/ProximaNova-ExtraBold/ProximaNova-ExtraBold.ttf") format("truetype");
+  font-family: "ProximaNovaExtrabold";
+  src: url("../font/ProximaNovaExtrabold/ProximaNovaExtrabold.eot");
+  src: url("../font/ProximaNovaExtrabold/ProximaNovaExtrabold.eot?#iefix") format("embedded-opentype"), url("../font/ProximaNovaExtrabold/ProximaNovaExtrabold.woff2") format("woff2"), url("../font/ProximaNovaExtrabold/ProximaNovaExtrabold.woff") format("woff"), url("../font/ProximaNovaExtrabold/ProximaNovaExtrabold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -708,7 +708,7 @@
 
   .btn-bank {
     padding: 10px 20px;
-    font: 400 11px/13px "LetoSansBold", sans-serif;
+    font: 400 10px/13px "LetoSansBold", sans-serif;
   }
 
   .dropdown__toggle {
@@ -729,8 +729,8 @@
   }
 
   .btn-bank {
-    padding: 15px 30px;
-    font: 400 16px/18px "LetoSansBold", sans-serif;
+    padding: 15px 23px;
+    font: 400 12px/14px "LetoSansBold", sans-serif;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -743,6 +743,11 @@
 
   .logo {
     height: 86px;
+  }
+
+  .btn-bank {
+    padding: 15px 30px;
+    font: 400 16px/18px "LetoSansBold", sans-serif;
   }
 }
 /* ---------------------------------------- */
@@ -771,19 +776,19 @@
 }
 .slider__heading {
   color: #fff;
-  font: 400 29px/36px "ProximaNova-Bold", sans-serif;
+  font: 400 29px/36px "ProximaNovaExtrabold", sans-serif;
   margin: 0 0 25px;
 }
 .slider__subheading {
   color: #fff;
-  font: 400 12px/14px sans-serif;
+  font: 400 12px/14px "LetoSans", sans-serif;
   margin: 0 0 20px;
 }
 .slider__btn {
   display: inline-block;
   position: relative;
   color: #fff;
-  font: 700 13px/14px sans-serif;
+  font: 700 13px/14px "LetoSans", sans-serif;
   text-transform: uppercase;
   border: 3px solid #fff;
   padding: 15px 16px;
@@ -859,11 +864,11 @@
     background-position: 50% 0;
   }
   .slider__heading {
-    font: 400 47px/54px "ProximaNova-Bold", sans-serif;
+    font: 400 47px/54px "ProximaNovaExtrabold", sans-serif;
     margin-bottom: 35px;
   }
   .slider__subheading {
-    font: 400 14px/20px sans-serif;
+    font: 400 14px/20px "LetoSans", sans-serif;
     margin-bottom: 50px;
   }
   .slider__btn {
@@ -877,19 +882,19 @@
 }
 @media only screen and (min-width: 960px) {
   .slider__heading {
-    font: 400 60px/66px "ProximaNova-Bold", sans-serif;
+    font: 400 60px/66px "ProximaNovaExtrabold", sans-serif;
   }
   .slider__subheading {
-    font: 400 14px/26px sans-serif;
+    font: 400 14px/26px "LetoSans", sans-serif;
     margin-bottom: 40px;
   }
 }
 @media only screen and (min-width: 1200px) {
   .slider__heading {
-    font: 400 69px/72px "ProximaNova-Bold", sans-serif;
+    font: 400 69px/72px "ProximaNovaExtrabold", sans-serif;
   }
   .slider__subheading {
-    font: 400 17px/26px sans-serif;
+    font: 400 17px/26px "LetoSans", sans-serif;
     margin-bottom: 90px;
   }
 }
