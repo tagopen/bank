@@ -192,7 +192,7 @@
 /* S L I C K - S L I D E R    T H E M E    S T Y L E  */
 /* -------------------------------------------------- */
 .slick-loading .slick-list {
-  background: #fff url('../img/ajax-loader.gif?1482523269') center center no-repeat;
+  background: #fff url('../img/ajax-loader.gif?1482499946') center center no-repeat;
 }
 
 /* Icons */
@@ -634,6 +634,27 @@
   margin: 0;
   color: #ac183c;
   font: 400 26px/30px "MullerExtraBold", sans-serif;
+}
+.service__item {
+  margin-bottom: 10px;
+}
+.service__btn {
+  display: inline-block;
+  padding: 18px 80px !important;
+  margin-top: 20px;
+}
+.service__show-btn {
+  display: inline-block;
+  margin: 20px 0 0;
+  color: #282828;
+  font: 400 13px/14px "MullerMedium", sans-serif;
+  text-transform: uppercase;
+  border-bottom: 2px dashed #282828;
+}
+.service__show-btn:hover {
+  text-decoration: none;
+  color: #b4243b;
+  border-color: #b4243b;
 }
 
 .rss {
