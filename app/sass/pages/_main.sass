@@ -59,6 +59,7 @@
       background-color: $navbar-iconbar-bg
       &--middle
         background-color: $navbar-iconbar-middle-bg
+
 .logo
   position: relative
   display: block
@@ -89,6 +90,10 @@
   .navbar
     &-nav
       margin: 0
+      float: right
+    &-collapse
+      &--1
+        width: 100%
   .dropdown
     &__toggle
       background-color: #f6f6f6
@@ -104,6 +109,8 @@
       height: auto !important
       padding: 0
       overflow: visible !important
+      float: none
+      background-color: #f6f6f6
 +r(768)
   .navbar  
     &__item
@@ -116,6 +123,9 @@
   .dropdown
     &__toggle
       margin-top: 17px
+  .collapse
+    &--display
+      float: right
 +r(960)
   .navbar
     &__item

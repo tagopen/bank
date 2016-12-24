@@ -624,6 +624,10 @@
 
   .navbar-nav {
     margin: 0;
+    float: right;
+  }
+  .navbar-collapse--1 {
+    width: 100%;
   }
 
   .dropdown__toggle {
@@ -648,6 +652,8 @@
     height: auto !important;
     padding: 0;
     overflow: visible !important;
+    float: none;
+    background-color: #f6f6f6;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -665,6 +671,10 @@
 
   .dropdown__toggle {
     margin-top: 17px;
+  }
+
+  .collapse--display {
+    float: right;
   }
 }
 @media only screen and (min-width: 960px) {
