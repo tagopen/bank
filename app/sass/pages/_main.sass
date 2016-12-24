@@ -82,87 +82,6 @@
   border-top: 7px solid \9
   border-right: 5px solid transparent
   border-left: 5px solid transparent
-+comment('service styles')  
-.service
-  padding-bottom: 40px
-  &__heading
-    padding: 20px 0 15px
-    box-shadow: 0 2px 2px rgba(41, 41, 41, 0.12)
-    background-color: #fff
-    margin-bottom: 20px
-  &__title
-    margin: 0    
-    color: #ac183c
-    font: 400 26px/30px $font-muller-extra-bold
-  &__item
-    margin-bottom: 10px  
-  &__btn
-    display: inline-block 
-    padding: 18px 80px !important
-    margin-top: 20px
-  &__show-btn
-    display: inline-block  
-    margin: 20px 0 0
-    color: #282828
-    font: 400 13px/14px $font-muller-medium
-    text-transform: uppercase
-    border-bottom: 2px dashed #282828
-    &:hover
-      text-decoration: none
-      color: #b4243b
-      border-color: #b4243b
-.rss
-  padding-top: 5px
-  &__link
-    color: #ac183c
-  &__icon
-    margin-right: 10px  
-  &__text
-    text-decoration: underline 
-    font: 400 18px/20px $font-muller-medium
-.currency
-  height: 100%
-  box-shadow: 0 4px 19px rgba(0, 0, 0, 0.1)
-  &__heading
-    padding: 20px 20px 0
-    margin-bottom: 10px !important 
-    background-color: #fff
-  &__title
-    margin: 0 0 10px 
-    color: #ac183c
-    font: 400 26px/30px $font-muller-extra-bold
-    text-decoration: underline
-  &__tabs
-    border: 0 
-  &__link
-    color: #ac183c 
-    margin: 0 !important
-    border-bottom: 1px dashed #ac183c !important
-    padding: 0 !important
-    border-radius: 0 !important
-    &:hover,
-    &:focus,
-    &:visited
-      color: #282828
-      text-decoration: none
-  &__item
-    margin-right: 10px
-    position: relative
-    &.active
-      .currency__link
-        color: #282828 
-        border: 0 !important
-        padding: 0 !important
-      &:after
-        content: ''
-        position: absolute
-        display: block
-        width: 100%
-        height: 3px 
-        bottom: -10px
-        background-color: #ac183c 
-  &__content
-    padding: 20px 10px 0 20px    
 +rx(767)
   .nav  
     &--1
@@ -257,14 +176,13 @@
       background-color: #ac183c
       transition: all 0.2s ease
     &:hover,
-    &:focus,
-    &:visited
+    &:focus
       text-decoration: none
       color: #fff
       &:before
         top: 0
   &__container
-    height: 0      
+    height: 0
   &__markers          
     .slick
       &-dots
@@ -285,7 +203,6 @@
         button
           background-color: #ac183c !important   
 +r(768)
-  +comment('slider styles') 
   .slider
     &__item
       padding: 80px 0 0
@@ -313,7 +230,6 @@
         &-dots
           bottom: 40px
 +r(960)
-  +comment('slider styles') 
   .slider
     &__heading
       font: 400 60px/66px $font-pb 
@@ -321,7 +237,6 @@
       font: 400 14px/26px sans-serif
       margin-bottom: 40px
 +r(1200)      
-  +comment('slider styles') 
   .slider
     &__heading
       font: 400 69px/72px $font-pb 
@@ -329,6 +244,119 @@
       font: 400 17px/26px sans-serif
       margin-bottom: 90px
 +comment('section service style')
+.service
+  padding-bottom: 40px
+  &__heading
+    padding: 20px 0 15px
+    box-shadow: 0 2px 2px rgba(41, 41, 41, 0.12)
+    background-color: #fff
+    margin-bottom: 20px
+  &__title
+    margin: 0    
+    color: #ac183c
+    font: 400 26px/30px $font-muller-extra-bold
+  &__item
+    margin-bottom: 10px  
+  &__btn
+    display: inline-block 
+    padding: 18px 80px !important
+    margin-top: 20px
+  &__show-btn
+    display: inline-block  
+    margin: 20px 0 0
+    color: #282828
+    font: 400 13px/14px $font-muller-medium
+    text-transform: uppercase
+    border-bottom: 2px dashed #282828
+    &:hover
+      text-decoration: none
+      color: #b4243b
+      border-color: #b4243b
+.rss
+  padding-top: 5px
+  &__link
+    color: #ac183c
+  &__icon
+    margin-right: 10px  
+  &__text
+    text-decoration: underline 
+    font: 400 18px/20px $font-muller-medium
+.currency
+  height: 100%
+  box-shadow: 0 4px 19px rgba(0, 0, 0, 0.1)
+  &__heading
+    position: relative
+    padding: 20px 20px 10px
+    background-color: #fff
+    &:before
+      content: ''
+      position: absolute
+      display: block
+      width: 100%
+      height: 1px
+      left: 0
+      bottom: 0
+      background-color: #e3e3e3
+  &__tabs
+    margin-bottom: 0
+    padding-left: 0
+    list-style: none
+  &__item
+    position: relative
+    display: block
+    margin-right: 10px
+    margin-bottom: -1px
+    float: left
+    border-bottom: 1px dashed #ac183c
+    font: 400 13px/15px $font-muller-medium
+    color: #ac183c
+    &:before,
+    &:after
+      content: ''
+      position: absolute
+      display: block
+      transition: .28s ease-out all
+    &:before
+      height: 1px
+      width: 0
+      left: 0
+      bottom: -1px
+      background-color: #ac183c
+    &:after
+      width: 100%
+      height: 3px
+      visibility: hidden
+      left: 0
+      bottom: 0
+      background-color: #ac183c
+    &.active
+      border: 0 none
+      cursor: default
+      color: #555
+      &:before 
+        content: none
+      &:after
+        visibility: visible
+        bottom: -10px
+    &:hover,
+    &:focus
+      &:before
+        width: 100%
+  &__link
+    color: inherit
+    text-decoration: none
+    &:hover,
+    &:focus
+      cursor: inherit
+      color: inherit
+      text-decoration: none
+  &__title
+    margin: 0 0 10px 
+    color: #ac183c
+    font: 400 26px/30px $font-muller-extra-bold
+    text-decoration: underline
+  &__content
+    padding: 20px 10px 0 20px    
 .product
   padding: 20px
   height: 100%
