@@ -595,7 +595,7 @@
 .navbar-toggle {
   width: 100%;
   margin: 0;
-  padding: 29px;
+  padding: 31px;
   background-color: #fff;
   border: 0 none;
   -webkit-border-radius: 0;
@@ -673,7 +673,7 @@
   }
   .dropdown__toggle-btn {
     width: 100%;
-    height: 72px;
+    height: 75px;
     background-color: #f6f6f6;
   }
   .dropdown__icon:before {
