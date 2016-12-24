@@ -15,10 +15,16 @@ var gulp          = require('gulp'),
 gulp.task('sass', function() {
   return gulp.src(['app/sass/**/*.+(scss|sass)'])
     .pipe(sass({
+      config_file: 'config.rb',
       css: 'app/css',
       sass: 'app/sass',
       image: 'app/img'
     }))
+    .on('error', function(error) {
+      // Would like to catch the error here 
+      console.log(error);
+      this.emit('end');
+    })
     .pipe(autoprefixer(['last 15 versions', '>1%', 'ie 9'], {cascade: true}))
     .pipe(gulp.dest('app/css'))
     .pipe(browserSync.reload({stream: true}))
@@ -84,13 +90,13 @@ gulp.task('watch', ['browser-sync', 'css-libs', 'scripts'], function() {
 
 gulp.task('build', ['clean', 'img', 'sass', 'scripts'], function() {
   var buildCss = gulp.src([
-      'app/css/style.css',
+      'app/css/**/*',
       'app/css/libs.min.css',
     ])
     .pipe(gulp.dest('dist/css'));
 
-  var buildFonts = gulp.src('app/fonts/**/*')
-    .pipe(gulp.dest('dist/fonts'));
+  var buildFonts = gulp.src('app/font/**/*')
+    .pipe(gulp.dest('dist/font'));
 
   var buildJs = gulp.src('app/js/**/*')
     .pipe(gulp.dest('dist/js'));
