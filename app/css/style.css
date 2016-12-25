@@ -1308,7 +1308,7 @@
 .heading__link:hover, .heading__link:focus, .heading__link:visited {
   text-decoration: none;
 }
-.heading__link:hover {
+.heading__link:hover, .heading__link:focus {
   color: #b01641;
 }
 .heading__item + li:before {
