@@ -80,9 +80,3 @@ $(window).on('resize', function(){
 
 }).trigger('resize');
 
-$(document).ready(function(){
-  // Declare parallax on layers
-  $('.layer').parallax({
-    mouseport: $(".product__photo")
-  });
-});
