@@ -800,7 +800,6 @@
   content: "";
   display: block;
   position: absolute;
-  z-index: -1;
   left: 0;
   top: -105%;
   height: 100%;
@@ -815,6 +814,10 @@
 }
 .slider__btn:hover:before, .slider__btn:focus:before {
   top: 0;
+}
+.slider__btn-text {
+  position: relative;
+  z-index: 2;
 }
 .slider__container {
   height: 0;

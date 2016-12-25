@@ -193,7 +193,6 @@
       content: ''
       display: block
       position: absolute
-      z-index: -1
       left: 0
       top: -105%
       height: 100%
@@ -206,6 +205,9 @@
       color: #fff
       &:before
         top: 0
+    &-text
+      position: relative
+      z-index: 2
   &__container
     height: 0
   &__markers          
